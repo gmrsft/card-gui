@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0.1cm;
+    box-sizing: border-box;   
+}
+a{
+    text-decoration: none;
+}
+body.basic{
+    /*variaves*/
+    --bg-color: #EDF2FF;
+    --text-color: #EDF2FF; 
+    --text-avatar:#00082F;  
+    --box-color: #4263EB;
+    --text-footer: #00082F;
+    --text-footera: #3e0052;
+    --hover-a: 	#00082F;
+    --opacity-var: opacity:1;
+    --text-colorhover: #4263EB;
+}
+body.yellow{
+    --bg-color: #FFFF00;
+    --text-color: #F8F8FF;
+    --text-avatar:#000000; 
+    --box-color: #000000;
+    --text-footer: #000000;
+    --text-footera: #F8F8FF;
+    --hover-a: 	#FFFF00;
+    --opacity-var: opacity:0.8;
+    --text-colorhover: #000000;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-avatar);
+    font-family: 'Roboto', sans-serif;    
+}
+.container{    
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    margin: 40px auto;
+    padding: 0.1cm;
+    opacity: 0.5;
+    margin-top: -5px;
+}
+.container:hover{    
+    border-top:0.2rem var(--box-color) solid;
+    opacity: 1;
+}
+img{
+    width: 100%;
+}
+img.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: var(--box-color) solid 4px;
+    padding: 3.7px;
+    opacity: 1;
+
+    transition: background 1000ms;
+}
+.avatar:hover{
+    opacity: 0.5;
+}
+h1{
+    font-size: 32px;    
+    margin-top: 24px;
+    margin-bottom: 8px;   
+
+}
+ul{
+    list-style: none;
+    margin: 48px 0;
+}
+ul li a{
+    height: 53px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--box-color); /*#4263EB*/
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    
+
+    transition: background 1000ms;
+
+}
+ul li a:hover{
+    background: var(--hover-a);
+    opacity: var(--opacity-var);
+    color: var(--text-colorhover);
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;    
+    opacity: 0.8;
+    font-size: 18px;
+}
+footer{
+    font-weight: 500;
+    font-size: 12px;  
+    opacity: 0.6;
+    transition: background 1000ms;
+}
+footer:hover{
+    opacity: 1;    
+}
+footer a{
+    color: var(--text-footera);
+    
+}
+footer a:hover{
+    color: var(--text-colorhover);
+}
