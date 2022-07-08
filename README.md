@@ -1,4 +1,4 @@
-# card-gui
+# card-gui🎴
 
 FALA GALERA!!!
 
